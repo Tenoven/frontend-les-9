@@ -6,6 +6,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+/*  collors */
+  --green: green;
+  --light_green: lightgreen;
+  --blue: #4845E4;
+
 }
 
 body {

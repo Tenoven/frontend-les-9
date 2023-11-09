@@ -1,0 +1,84 @@
+/*======CSSreset======*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*======Kleuren======*/
+:root {
+
+}
+
+/*======Main======*/
+main {
+
+}
+
+
+/*======DASHBOARD======*/
+.verkoop_overzicht {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.box_sold {
+    display: flex;
+    flex-direction: column;
+    width: 30VW;
+    border-radius: 10px;
+    border: green 1px solid;
+    background-color: lightgreen;
+    color: green;
+    text-align: center;
+}
+
+.box_bought {
+    display: flex;
+    flex-direction: column;
+    width: 30VW;
+    border-radius: 10px;
+    border: blue 1px solid;
+    background-color: lightblue;
+    color: blue;
+    text-align: center;
+}
+
+.to_sell {
+    display: flex;
+    flex-direction: column;
+    width: 30VW;
+    border-radius: 10px;
+    border: red 1px solid;
+    background-color: lightpink;
+    color: red;
+    text-align: center;
+}
+
+.verkoop_overzicht, p {
+    /*padding:20px 0;*/
+}
+
+.outertvbox {
+    display: flex;
+    justify-content: center;
+}
+.besttvbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: black 1px dashed;
+    background-color: lightgrey;
+    width: 90vw;
+}
+
+.tv-image{
+    width: 80%;
+}
+
+.best_image_box {
+    flex-basis: 400px;
+    padding: 30px 30px;
+}
