@@ -3,6 +3,7 @@ import tvSold, {toSell, tvBought} from "../helper/Tv-sold.js";
 import {Best_tv_inches, Best_tv_name_string, Best_tv_price, bestTv_image} from "../helper/best-tv.js";
 import check from "./assets/check.png";
 import minus from "./assets/minus.png";
+import {geschikt_voor_sport_eerst, goedkoopste_eerst, meest_verkocht_eerst} from "../helper/buttons.js";
 
 function App() {
     return (
@@ -50,6 +51,16 @@ function App() {
                                     <span> Ambilight </span>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+                </article>
+                <article>
+                    <h2>Alle tvs</h2>
+                    <section>
+                        <div className={"buttonSection"}>
+                            <button type={"button"} onClick={meest_verkocht_eerst}>Meest verkocht eerst</button>
+                            <button type={"button"} onClick={goedkoopste_eerst}>Goedkoopste eerst</button>
+                            <button type={"button"} onClick={geschikt_voor_sport_eerst}>Meest geschikt voor sport eerst</button>
                         </div>
                     </section>
                 </article>

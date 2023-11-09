@@ -11,12 +11,14 @@
 }
 
 /*======Main======*/
-main {
-
+h1, h2 {
+    padding-left: 71px;
 }
 
 
 /*======DASHBOARD======*/
+
+
 .verkoop_overzicht {
     display: flex;
     flex-direction: row;
@@ -93,4 +95,12 @@ main {
 
 .smaller {
     width: 01%;
+}
+
+.buttonSection {
+    padding-left: 71px;
+}
+.buttonSection > button  {
+    margin-right: 10px ;
+    padding: 3px 6px;
 }
