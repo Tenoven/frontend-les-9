@@ -1,6 +1,8 @@
 import './App.css';
 import tvSold, {toSell, tvBought} from "../helper/Tv-sold.js";
 import {Best_tv_inches, Best_tv_name_string, Best_tv_price, bestTv_image} from "../helper/best-tv.js";
+import check from "./assets/check.png";
+import minus from "./assets/minus.png";
 
 function App() {
     return (
@@ -11,7 +13,7 @@ function App() {
                     <h2>Verkoopoverzicht</h2>
                     <section className={"verkoop_overzicht"}>
                         <div className={"box_sold"}>
-                            <p>aantal verkochte producten  </p>
+                            <p>Aantal verkochte producten  </p>
                             <p>{tvSold()}</p>
                         </div>
                         <div className={"box_bought"}>
@@ -35,6 +37,18 @@ function App() {
                                 <p>{Best_tv_name_string()}</p>
                                 <p>{Best_tv_price()}</p>
                                 <p>{Best_tv_inches()}</p>
+                                <div>
+                                    <img src={check} alt="" className={"smaller"}/>
+                                    <span> Wifi </span>
+                                    <img src={minus} alt="" className={"smaller"}/>
+                                    <span> Speech </span>
+                                    <img src={check} alt="" className={"smaller"}/>
+                                    <span> Hdr </span>
+                                    <img src={check} alt="" className={"smaller"}/>
+                                    <span> Bluetooth </span>
+                                    <img src={minus} alt="" className={"smaller"}/>
+                                    <span> Ambilight </span>
+                                </div>
                             </div>
                         </div>
                     </section>
